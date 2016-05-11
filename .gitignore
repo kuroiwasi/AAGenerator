@@ -1,4 +1,4 @@
-*.png
-*.bmp
-*.hog
+img/*.png
+img/*.bmp
+img/*.jpg
 projects/
