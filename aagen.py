@@ -41,7 +41,7 @@ def processing():
 	# weighting matrix
 	weightmat = makeWeightMatrix(0.1)
 
-	for coordY in range(0,height/16):
+	for coordY in range(0,(int)(height/16)):
 		coordX = 0
 		while coordX < width:
 			okx=0
@@ -91,7 +91,7 @@ def processing():
 
 def main():
 	if len(sys.argv) < 3:
-		print 'Usage: # python %s input_file project_name [edge_switch(>0)]' % os.path.basename(sys.argv[0])
+		print ('Usage: # python %s input_file project_name [edge_switch(>0)]' % os.path.basename(sys.argv[0]))
 		quit()
 
 	processing()
